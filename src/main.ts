@@ -2,7 +2,9 @@ import "core-js";
 import "reflect-metadata";
 import "zone.js/dist/zone";
 
-import {bootstrap} from "@angular/platform-browser-dynamic";
-import {AppComponent} from "./app/app.component";
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { VueSolutionModule }      from './modules/VueSolutions/vueSolutionsModule';
 
-bootstrap(AppComponent);
+platformBrowserDynamic().bootstrapModule(VueSolutionModule);
+
+

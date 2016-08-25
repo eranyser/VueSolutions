@@ -1,11 +1,11 @@
 import {Component, OnInit} from "@angular/core";
-import {VueHeader} from "./components/header/vueHeader"
+//import {VueHeader} from "../header/vueHeader"
 
 @Component({
     selector: "vue-main",
-    templateUrl: "src/app/app.component.html",
-    styleUrls: ["src/app/app.component.css"],
-    directives: [VueHeader],
+    templateUrl: "src/modules/VueSolutions/components/main/main.component.html",
+    styleUrls: ["src/modules/VueSolutions/components/main/main.component.css"],
+    //directives: [VueHeader],
 })
 export class AppComponent implements OnInit{
     appTitle: string = "Vue Solutions"
