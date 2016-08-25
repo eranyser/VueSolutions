@@ -1,0 +1,11 @@
+#mainContent {
+	position: absolute;
+    top: 45px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /*border: solid 1px red;*/
+    border-style: solid;
+  	border-width: 1px;
+  	border-color: blue;
+}

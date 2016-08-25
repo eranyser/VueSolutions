@@ -1,0 +1,42 @@
+*{
+    
+	margin: 0px;
+	padding: 0px;
+    /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+}
+
+html {
+	position: relative;
+	height: 100%;
+
+    /*
+	border-style: solid;
+	border-width: 2px;
+	border-color: green;	
+	*/
+}
+
+body {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+  	/*
+    border-style: solid;
+  	border-width: 1px;
+  	border-color: green;
+    */
+}
+
+#vueMain {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    border-style: solid;
+  	border-width: 1px;
+  	border-color: red;
+}
+
+
