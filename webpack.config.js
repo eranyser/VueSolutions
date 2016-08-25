@@ -2,7 +2,12 @@ var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: './src/main.ts',
+    entry: {/*
+        'polyfills': './src/polyfills.js',
+        'vendor': './src/vendor.js',  
+        */      
+        'mainApp': './src/main.ts'
+    },
     output: {
         path: "./dist",
         filename: "vue.solutions.js"
@@ -26,12 +31,16 @@ module.exports = {
         extensions: ['', '.js', '.ts']
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ['mainApp'/*, 'vendor', 'polyfills'*/]
+        }),
         /**
          * The HtmlWebpackPlugin readh the index.html from the src folder, 
          * add the corresoponding script tag and copy it to the dist folder
          */
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
+
     ]
 }
